@@ -1,0 +1,220 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.content {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+
+/* HEADING */
+
+.header-content {
+  height: 100%;
+}
+
+header {
+  height: 25vw;
+  max-height: 150px;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+header::after {
+background-image: url(https://s-media-cache-ak0.pinimg.com/236x/bd/86/6b/bd866bf3689609e1dd85bb10e043c290.jpg);
+height: 25vw;
+max-height: 150px;
+width: 100%;
+content: "";
+opacity: 0.25;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+position: absolute;
+z-index: -1; 
+
+/* taken from https://css-tricks.com/snippets/css/transparent-background-images/ */ 
+
+
+}
+.udacity-logo {
+  max-height: 45%;
+  margin: 0 auto;
+  padding-top:15px;
+  float: left;
+}
+
+footer {
+  height: 20vw;
+  margin-top:50px;
+  max-height:50px;
+  width:100%;
+  background-color:#f0f0f0;
+ 
+}
+
+/*footer::after {
+background-image: url(https://s-media-cache-ak0.pinimg.com/236x/bd/86/6b/bd866bf3689609e1dd85bb10e043c290.jpg);
+height: 20vw;
+max-height: 100px;
+width: 100%;
+content: "";
+opacity: 0.25;
+top: 0;
+left: 0;
+bottom: -100px;
+right: 0;
+position: absolute;
+z-index: -1;
+
+
+}*/
+
+
+h1 {
+  float: left;
+  text-align:center;
+  padding-top: 5%;
+  padding-left:2%;
+  width: 95%;
+  font-size:40px;
+  font-weight: normal;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 380px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 464px) and (min-width: 381px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 465px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .header-content {
+    padding-top: 15px;
+  }
+}
+
+@media screen and (max-width: 549px) {
+  .header-content {
+    padding-top: 5px;
+  }
+}
+
+
+/* MAIN SECTIONS */
+
+.hero {
+  padding: 1em;
+  max-width: 100%;
+  background-color: darkmagenta;
+  color: white;
+}
+
+.my-picture {
+  display: block;
+  margin: 0 auto 10px;
+  max-width: 105%;
+  border: 2px solid white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.iama {
+  max-width: 100%;
+  color: #969696;
+  letter-spacing: 0.05em;
+  font-size: 19px;
+  margin: 0;
+}
+
+.hw-header {
+  text-align:center;
+  font-weight: bold;
+  font-size:40px;
+  font-family: 'Shadows Into Light Two', cursive;
+}
+
+#caption {
+  text-align:center;
+  font-size: 18px;
+  font-weight:bold;
+  font-family: 'Shadows Into Light Two', cursive;
+  margin-bottom:15px;
+}
+
+.my-info {
+ 
+  max-width: 100%;
+  font-size: 20px;
+  margin: 0 auto 20px;
+}
+
+.my-info:last-of-type {
+  margin: 0;
+}
+
+.my-name {
+  color: white;
+}
+
+.about-me {
+  padding: 1em;
+}
+
+.credits-content {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.credits {
+  margin-top:30px;
+  padding-top:25px;
+  margin-bottom:10px;
+  font-size:22px;
+  vertical-align:bottom;
+  font-family: 'Shadows Into Light Two', cursive;
+}
+
+.social-media {
+    list-style-type: none;
+    max-width: 150px;
+    float: right;
+    margin-top: 10px;
+    margin-right:15px;
+    margin-bottom: 0;
+
+}
+
+.social-media-li {
+  padding: 0 !important;
+  display: inline-block !important;
+  float: left;
+  margin: 0 8px 10px 0 !important;
+  list-style-type: none !important;
+
+}
+
+.social-media-li img {
+  opacity: .4;
+  vertical-align:top;
+}
