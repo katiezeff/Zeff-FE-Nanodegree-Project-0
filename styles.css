@@ -234,12 +234,16 @@ h1 {
 
 .social-media {
     list-style-type: none;
-    max-width: 250px;
+    max-width: 275px;
     float: right;
     margin-top: 10px;
     margin-right:15px;
     margin-bottom: 0;
 
+}
+
+.social-media .contact {
+    padding-top: 12px;
 }
 
 .social-media-li {
