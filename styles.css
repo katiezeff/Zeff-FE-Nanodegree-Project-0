@@ -29,18 +29,21 @@ header {
     padding: 0;
     overflow: hidden;
     background-color: #d7d7d7;
-    border-radius: 5px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    width: 350px;
+    float: right;
 }
 
 .home-nav-li {
     float: right;
 }
 
-li a {
+.home-nav-li a {
     display: block;
     color: #373737;
     text-align: center;
-    padding: 8px 16px;
+    padding: 8px 20px;
     text-decoration: none;
 }
 
@@ -50,7 +53,7 @@ a:hover {
 }
 
 .home-nav-li:active {
-background-color:darkmagenta;
+background-color: darkmagenta;
 color: #fff;
 font-weight:bold;
 box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
