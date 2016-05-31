@@ -242,7 +242,7 @@ h1 {
 
 }
 
-.social-media-li .contact {
+.contact {
     margin-top: 12px;
 }
 
@@ -251,7 +251,7 @@ h1 {
   display: inline-block !important;
   float: left;
   color: #373737;
-  margin: 0 4px 10px 0 !important;
+  margin: 0 4px 10px 0;
   list-style-type: none !important;
 
 }
