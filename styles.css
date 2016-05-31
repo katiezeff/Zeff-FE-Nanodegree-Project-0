@@ -18,7 +18,7 @@ body {
 header {
   height: 10vw;
   max-height: 150px;
-  width: 100%;
+  width: 67%;
   display: block;
   position: relative;
 }
@@ -31,7 +31,7 @@ header {
     background-color: #d7d7d7;
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
-    width: 350px;
+    width: 360px;
     float: right;
 }
 
@@ -43,7 +43,7 @@ header {
     display: block;
     color: #373737;
     text-align: center;
-    padding: 8px 20px;
+    padding: 8px 18px;
     text-decoration: none;
 }
 
