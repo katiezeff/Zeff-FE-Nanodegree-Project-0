@@ -145,13 +145,14 @@ h1 {
 
 @media screen and (min-width: 550px) {
   .header-content {
-    padding-top: 15px;
+    padding-top: 0px;
   }
 }
 
 @media screen and (max-width: 549px) {
   .header-content {
     padding-top: 5px;
+    margin-top: 10%;
   }
 }
 
