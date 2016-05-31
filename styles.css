@@ -29,8 +29,8 @@ header {
     padding: 0;
     overflow: hidden;
     background-color: #d7d7d7;
-    border-top-right-radius: 12px;
-    border-top-left-radius: 12px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
     width: 360px;
     float: right;
 }
@@ -43,12 +43,12 @@ header {
     display: block;
     color: #373737;
     text-align: center;
-    padding: 8px 18px;
+    padding: 8px 20px;
     text-decoration: none;
 }
 
 a:hover {
-    background-color: #a500a5;
+    background-color: darkmagenta;
     color: #fff;
 }
 
