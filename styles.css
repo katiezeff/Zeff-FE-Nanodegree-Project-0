@@ -8,6 +8,10 @@ body {
   margin: 0 auto;
 }
 
+.resume-content hr {
+  margin-top: -10px;
+}
+
 .resume-hero {
   text-align:center;
   padding: 1em;
