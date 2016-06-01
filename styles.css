@@ -4,7 +4,7 @@ body {
 }
 
 .resume-content, .content {
-  max-width: 500px;
+  max-width: 515px;
   margin: 0 auto;
 }
 
@@ -16,6 +16,9 @@ body {
   color: white;
 }
 
+.resume-title {
+  font-weight:bold;
+}
 
 /* HEADING */
 
