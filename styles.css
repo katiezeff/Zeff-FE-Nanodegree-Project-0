@@ -3,18 +3,24 @@ body {
   margin: 0;
 }
 
-.resume-content, .content {
+.resume-content,  .content {
   max-width: 515px;
+  margin: 0 auto;
+  height:auto;
+}
+
+.project-content {
+  height:700px;
+  width: 600px;
   margin: 0 auto;
 }
 
-.resume-content hr {
+.content hr {
   margin-top: -10px;
 }
 
 .resume-hero {
   text-align:center;
-  padding: 1em;
   max-width: 100%;
   background-color: darkmagenta;
   color: white;
@@ -22,6 +28,21 @@ body {
 
 .resume-title {
   font-weight:bold;
+  margin-top:12px;
+}
+
+.resume-date {
+  float:right;
+  color: #808080;
+}
+
+.resume-list li {
+  margin-bottom:4px;
+  margin-left:-22px;
+}
+
+.resume-list li:last-child {
+  margin-bottom:10px;
 }
 
 /* HEADING */
@@ -52,6 +73,7 @@ header {
 
 .project-list {
   list-style-type:none;
+  min-height: 500px;
 }
 
 .project-list-li {
@@ -61,13 +83,24 @@ header {
 
 .project-list-li a {
   color: #fff;
+  font-size:1.1em;
 }
 
 .project-list-li img {
-  width:320px;
-  height: 200px;
-  padding: 5px;
+  width:260px;
+  height: 175px;
+  margin: 8px 8px 0px 0px;
   /*padding-left:20px;*/
+}
+
+.project-left {
+  width: 46%;
+  float:left;
+}
+
+.project-right {
+  width:46%;
+  float:right;
 }
 
 .home-nav-li {
@@ -258,6 +291,10 @@ h1 {
 
 .about-me {
   padding: 1em;
+}
+
+.resume-about-me {
+  padding: 0em;
 }
 
 .credits-content {
