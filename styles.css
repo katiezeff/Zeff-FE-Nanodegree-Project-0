@@ -10,8 +10,8 @@ body {
 }
 
 .project-content {
-  height:700px;
-  width: 600px;
+  height:780px;
+  width: 550px;
   margin: 0 auto;
 }
 
@@ -83,13 +83,13 @@ header {
 
 .project-list-li a {
   color: #fff;
-  font-size:1.1em;
+  font-size:1em;
 }
 
 .project-list-li img {
   width:260px;
   height: 175px;
-  margin: 8px 8px 0px 0px;
+  margin: 6px 6px 0px 0px;
   /*padding-left:20px;*/
 }
 
@@ -197,11 +197,39 @@ h1 {
   h1 {
     font-size: 24px;
   }
+   .project-left {
+    width:100%;
+  }
+  .project-right {
+    width:100%;
+    float:left;
+  }
+  .project-list-li {
+    float:left;
+  }
+   .project-content {
+    height:1600px;
+  }
 }
 
 @media screen and (max-width: 464px) and (min-width: 381px) {
   h1 {
     font-size: 32px;
+
+  }
+  .project-left {
+    width:100%;
+  }
+  .project-right {
+    width:100%;
+    float:left;
+  }
+  .project-list-li {
+    float:left;
+  }
+
+  .project-content {
+    height:1600px;
   }
 }
 
