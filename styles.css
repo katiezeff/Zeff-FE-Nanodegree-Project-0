@@ -131,7 +131,7 @@ box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 header::after {
-background-image: url(https://s-media-cache-ak0.pinimg.com/236x/bd/86/6b/bd866bf3689609e1dd85bb10e043c290.jpg);
+background: url(https://s-media-cache-ak0.pinimg.com/236x/bd/86/6b/bd866bf3689609e1dd85bb10e043c290.jpg) repeat center center fixed;
 height: 150px;
 max-height: 150px;
 width: 100%;
@@ -144,10 +144,21 @@ right: 0;
 position: absolute;
 z-index: -1; 
 
+
 /* taken from https://css-tricks.com/snippets/css/transparent-background-images/ */ 
 
 
 }
+
+
+.scroll-background {
+  background: url(https://s-media-cache-ak0.pinimg.com/236x/bd/86/6b/bd866bf3689609e1dd85bb10e043c290.jpg) repeat center center fixed;
+  opacity:0.3;
+  height: 10px;
+  width: 100%;
+
+}
+
 .udacity-logo {
   max-height: 45%;
   margin: 0 auto;
