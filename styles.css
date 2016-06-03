@@ -52,7 +52,7 @@ body {
 }
 
 header {
-  height: 24vw;
+  height: 150px;
   max-height: 150px;
   width: 100%;
   display: block;
@@ -69,6 +69,7 @@ header {
     border-top-left-radius: 16px;
     width: 363px;
     float: right;
+    margin-right:1px;
 }
 
 .project-list {
@@ -113,11 +114,13 @@ header {
     text-align: center;
     padding: 8px 20px;
     text-decoration: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
-a:hover {
-    background-color: darkmagenta;
-    color: #fff;
+.home-nav-li a:hover {
+    /*color: darkmagenta;*/
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
 }
 
 .active {
@@ -129,7 +132,7 @@ box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
 header::after {
 background-image: url(https://s-media-cache-ak0.pinimg.com/236x/bd/86/6b/bd866bf3689609e1dd85bb10e043c290.jpg);
-height: 25vw;
+height: 150px;
 max-height: 150px;
 width: 100%;
 content: "";
@@ -247,8 +250,11 @@ h1 {
 
 @media screen and (max-width: 549px) {
   .header-content {
-    padding-top: 5px;
+    padding-top: 20px;
     
+  }
+  section {
+    font-size:96%;
   }
 }
 
@@ -364,6 +370,11 @@ h1 {
 }
 
 .social-media-li img {
-  opacity: .3;
+  opacity: .25;
   vertical-align:top;
+}
+
+
+.social-media-li img:hover {
+  opacity: .35;
 }
