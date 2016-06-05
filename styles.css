@@ -10,8 +10,8 @@ body {
 }
 
 .project-content {
-  height:780px;
-  width: 550px;
+  height:760px;
+  width: 595px;
   margin: 0 auto;
 }
 
@@ -24,6 +24,7 @@ body {
   max-width: 100%;
   background-color: darkmagenta;
   color: white;
+  font-weight:normal;
 }
 
 .resume-title {
@@ -67,7 +68,7 @@ header {
     background-color: #d7d7d7;
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
-    width: 363px;
+    width: 301px;
     float: right;
     margin-right:1px;
 }
@@ -95,13 +96,14 @@ header {
 }
 
 .project-left {
-  width: 46%;
+  width: 40%;
   float:left;
 }
 
 .project-right {
-  width:46%;
+  width:45%;
   float:right;
+  margin-right:6%;
 }
 
 .home-nav-li {
@@ -112,7 +114,7 @@ header {
     display: block;
     color: #373737;
     text-align: center;
-    padding: 8px 20px;
+    padding: 8px 25px;
     text-decoration: none;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -154,7 +156,7 @@ z-index: -1;
 .scroll-background {
   background: url(https://s-media-cache-ak0.pinimg.com/236x/bd/86/6b/bd866bf3689609e1dd85bb10e043c290.jpg) repeat center center fixed;
   opacity:0.3;
-  height: 10px;
+  height: 11px;
   width: 100%;
 
 }
@@ -167,9 +169,9 @@ z-index: -1;
 }
 
 footer {
-  height: 65px;
-  margin-top:60px;
-  max-height:65px;
+  height: 60px;
+  margin-top:65px;
+  max-height:60px;
   width:100%;
   background-color:#f0f0f0;
   position: relative;
@@ -303,7 +305,7 @@ h1 {
   text-align:center;
   max-width: 100%;
   color: #969696;
-
+  font-weight:500;
 }
 
 .hw-header {
@@ -350,17 +352,30 @@ h1 {
 }
 
 .credits {
-  margin-top:30px;
+  margin-top:45px;
   padding-top:25px;
-  margin-bottom:10px;
-  font-size:22px;
+  margin-bottom:8px;
+  font-size:20px;
   vertical-align:bottom;
   font-family: 'Shadows Into Light Two', cursive;
 }
 
+.contact-info {
+  margin-bottom: -8px;
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #808080;
+}
+
 .social-media {
     list-style-type: none;
-    max-width: 275px;
+    max-width: 325px;
     float: right;
     margin-top: 10px;
     margin-right:15px;
@@ -368,8 +383,12 @@ h1 {
 
 }
 
-.contact {
-    margin-top: 12px;
+.social-media-li.contact {
+    margin-top: 5px;
+    font-size:20px;
+    color: #B4B4B4;
+    margin-right:10px;
+    font-family: 'Shadows Into Light Two', cursive;
 }
 
 .social-media-li {
@@ -377,7 +396,7 @@ h1 {
   display: inline-block !important;
   float: left;
   color: #373737;
-  margin: 0 4px 10px 0;
+  margin: 0 6px 6px 0;
   list-style-type: none !important;
 
 }
@@ -385,9 +404,144 @@ h1 {
 .social-media-li img {
   opacity: .25;
   vertical-align:top;
+  transform: scale(1.1, 1.1);
 }
 
 
 .social-media-li img:hover {
   opacity: .35;
 }
+
+
+/* project item hover */
+
+.view {
+  margin: 6px;
+  float: left;
+  border: 8px solid #fff;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  box-shadow: 1px 1px 2px #e6e6e6;
+  cursor: default;
+  background: #fff url(../images/bgimg.jpg) no-repeat center center;
+}
+
+.view .mask,
+.view .content {
+  width: 265px;
+  height: 190px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.view img {
+  display: block;
+  position: relative;
+}
+
+.view h4 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+  font-family: sans-serif;
+  padding: 6px;
+  margin: 8px 0 0 0;
+}
+
+.view p {
+  font-family: sans-serif;
+  font-style: ;
+  font-size: 16px;
+  position: relative;
+  color: #fff;
+  padding: 0px 10px 0px 10px;
+  text-align: center;
+}
+
+.view a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 6px 15px;
+  border-radius:5px;
+  border: 1px solid #707070;
+  background: #707070;
+  color: #fff;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  box-shadow: 0 0 5px #373737;
+}
+
+.view a.info:hover {
+  box-shadow: 0 0 5px #000;
+}
+
+
+/*1*/
+
+.project-list-li img {
+  /*1*/
+  transition: all 0.25s linear;
+  width: 260px;
+  height: 175px;
+}
+
+.project-list-li .mask {
+  opacity: 0;
+  background-color: rgba(85, 85, 85, 0.7);
+  transition: all 0.4s ease-in-out;
+}
+
+.project-list-li h4 {
+  transform: translateY(100px);
+  opacity: 0;
+  font-family: sans-serif;
+  transition: all 0.3s linear;
+}
+
+.project-list-li p {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.3s linear;
+  width:240px;
+}
+
+.project-list-li a.info {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-list-li a {
+  text-decoration:none;
+}
+
+
+/* */
+
+.project-list-li:hover img {
+  transform: scale(1.15);
+}
+
+.project-list-li:hover .mask {
+  opacity: 1;
+}
+
+.project-list-li:hover h4,
+.project-list-li:hover p,
+.project-list-li:hover a.info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.project-list-li:hover p {
+  transition-delay: 0.1s;
+}
+
+.project-list-li:hover a.info {
+  transition-delay: 0.2s;
+}
+
