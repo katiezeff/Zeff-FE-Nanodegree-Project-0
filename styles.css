@@ -180,7 +180,9 @@ h1 {
 }
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 380px) {
+
+
+@media screen and (max-width: 375px) {
     h1 {
         font-size: 24px;
     }
@@ -195,10 +197,12 @@ h1 {
         float: left;
     }
     .project-content {
-        height: 1600px;
+        height: 1400px;
     }
+
+
 }
-@media screen and (max-width: 464px) and (min-width: 381px) {
+@media screen and (max-width: 464px) and (min-width: 376px) {
     h1 {
         font-size: 32px;
     }
@@ -292,7 +296,7 @@ h1 {
     padding: 1em;
 }
 .resume-about-me {
-    padding: 0em;
+    padding: .5em;
 }
 .credits-content {
     max-width: 550px;
