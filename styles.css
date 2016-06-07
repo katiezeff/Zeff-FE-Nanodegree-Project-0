@@ -44,6 +44,7 @@ body {
 
 .header-content {
     height: 64%;
+    padding-top: 20px;
 }
 header {
     height: 150px;
