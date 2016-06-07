@@ -601,7 +601,7 @@ h1 {
         padding-top: 20px;
     }
 }
-@media screen and (min-width: 550px) and (max-width:769px) {
+@media screen and (min-width: 550px) and (max-width:767px) {
     .header-content {
         padding-top: 20px;
     }
@@ -625,4 +625,7 @@ h1 {
 
 
 
-}
+@media screen and (min-width: 768px) and (max-width:1440px) {
+    .header-content {
+        padding-top: 20px;
+    }
