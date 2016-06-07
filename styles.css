@@ -527,6 +527,7 @@ h1 {
     .project-list-li p {
       opacity: 1;
       top: -80px;
+      width: 225px;
     }
 
 }
@@ -591,6 +592,7 @@ h1 {
     .project-list-li p {
       opacity: 1;
       top: -80px;
+      width: 225px;
     }
     .header-content {
         padding-top: 20px;
