@@ -536,7 +536,7 @@ h1 {
 
 
 
-@media screen and (min-width: 465px) and (max-width:768px){
+@media screen and (min-width: 465px) {
     h1 {
         font-size: 36px;
     }
@@ -601,13 +601,13 @@ h1 {
         padding-top: 20px;
     }
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 550px) and (max-width:769px) {
     .header-content {
         padding-top: 20px;
     }
     .project-content {
         height: 1400px;
-        width:100%;
+        width:40%;
     }
 }
 @media screen and (max-width: 549px) {
