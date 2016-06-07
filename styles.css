@@ -416,6 +416,10 @@ h1 {
     h1 {
         font-size: 24px;
     }
+
+    .header-content {
+      
+    }
     .project-left {
         width: 100%;
     }
@@ -437,8 +441,8 @@ h1 {
         margin: 0px;
     }
     .view {
-        margin: 3px;
-        border: 1px solid #fff;
+        margin: 9px;
+        border: 3px solid #fff;
     }
 
     .project-list {
@@ -464,6 +468,7 @@ h1 {
     .project-list-li p {
       opacity: 1;
       top: -80px;
+      width: 225px;
     }
 
 }
@@ -482,10 +487,11 @@ h1 {
         float: left;
     }
     .project-content {
-        height: 1600px;
-        .project-content {
         height: 1400px;
         width:100%;
+    }
+    .header-content {
+      padding-top:20px;
     }
 
      .project-list-li img {
@@ -500,6 +506,7 @@ h1 {
 
     .project-list {
       margin-left:-36px;
+      min-height:0px;
     }
 
     .project-list-li .mask {
@@ -530,10 +537,69 @@ h1 {
     h1 {
         font-size: 36px;
     }
+    .project-content {
+        height: 1400px;
+        width:100%;
+    }
+    .project-left {
+        width: 100%;
+    }
+    .project-right {
+        width: 100%;
+        float: left;
+    }
+    .project-list-li {
+        float: left;
+    }
+    .project-content {
+        height: 1400px;
+        width:100%;
+    }
+    
+    
+
+     .project-list-li img {
+        width: 240px;
+        height: 160px;
+        margin: 0px;
+    }
+    .view {
+        margin: 3px;
+        border: 1px solid #fff;
+    }
+
+    .project-list {
+      margin-left:-36px;
+      min-height:0px;
+    }
+
+    .project-list-li .mask {
+      opacity: 1; }
+
+    .project-list-li .view {
+      opacity: 1;
+    }
+    .project-list-li h4 {
+      opacity: 1;
+      top:-80px;
+    }
+
+    a.info {
+      opacity: 1;
+    }
+
+    .project-list-li p {
+      opacity: 1;
+      top: -80px;
+    }
 }
 @media screen and (min-width: 550px) {
     .header-content {
         padding-top: 20px;
+    }
+    .project-content {
+        height: 1400px;
+        width:100%;
     }
 }
 @media screen and (max-width: 549px) {
@@ -542,6 +608,10 @@ h1 {
     }
     section {
         font-size: 96%;
+    }
+    .project-content {
+        height: 1400px;
+        width:100%;
     }
 }
 
