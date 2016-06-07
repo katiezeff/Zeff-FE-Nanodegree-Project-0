@@ -536,7 +536,7 @@ h1 {
 
 
 
-@media screen and (min-width: 465px) {
+@media screen and (min-width: 465px) and (max-width:768px){
     h1 {
         font-size: 36px;
     }
