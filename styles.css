@@ -24,6 +24,7 @@ body {
     background-color: darkmagenta;
     color: white;
     font-weight: normal;
+    
 }
 .resume-title {
     font-weight: bold;
@@ -61,7 +62,7 @@ header {
     /*background-color: #d7d7d7;*/
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
-    width: 320px;
+    width: 330px;
     float: right;
     margin-right: 4px;
 }
@@ -111,7 +112,7 @@ header {
     background-color: #d7d7d7;
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
-    width:100px;
+    width:110px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
 }
@@ -207,6 +208,7 @@ h1 {
     max-width: 100%;
     background-color: darkmagenta;
     color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .my-picture {
     display: block;
