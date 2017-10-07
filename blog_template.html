@@ -1,0 +1,779 @@
+<!-- This is a two-column template. It includes a header with MINDBODY logo, Hero Image, a paragraph of text, 2 versions of a two column layout, a CTA button and a footer.
+
+STYLE GUIDE TABLE OF CONTENTS:
+1. BASICS
+2. SECTION STYLES
+    A) HEADER 
+    B) CONTENT
+    C) WRAPPER
+    D) OUTER/WRAPPER
+3. IMAGE STYLES
+    A) FULL-WIDTH HERO IMAGE
+    B) SECONDARY IMAGE - USE SECONDARY IMAGE FOR ALL OTHER IMAGES
+4. TEXT STYLES
+    A) H1/H2 GRAY
+    B) ORANGE TEXT
+    C) PINK TEXT
+5. ONE COLUMN LAYOUT STYLES
+     A) ONE COLUMN PARAGRAPH TEXT STYLES - p, h1, h2, subtext
+6. TWO COLUMN LAYOUT STYLES
+6. FOOTER STYLES
+    A) SOCIAL ICONS
+    B) FOOTER BG COLOR
+    C) FOOTER LOGO
+7. LEFT SIDEBAR LAYOUT STYLES
+8. MEDIA QUERIES
+
+** PLEASE DELETE THESE COMMENTS ONCE YOU ARE FINISHED BUILDING THE EMAIL **
+ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- So that mobile will display zoomed in -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- enable media queries for windows phone 8 -->
+    <title>This is a Two Column Template</title><!-- The title tag shows in email notifications, like Android 4.4 -->
+
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 9 - 26 can be safely removed. -->
+    
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+        <style>
+            * {
+                font-family: Arial, sans-serif !important !important;
+            }
+        </style>
+    <![endif]-->
+    
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+    
+    <!-- CSS Reset -->
+    <style type="text/css">
+    
+    
+    a {
+        color: #2479bb;
+        text-decoration: underline;
+    }
+      
+        .mobile-link--footer a,
+        a[x-apple-data-detectors] {
+            color:inherit !important;
+            text-decoration: underline !important;
+        }
+
+        
+        div[style*=margin 16px 0]{
+            margin:0 !important;
+            padding: 0 !important;
+        }
+    
+    body {
+        margin: 0 !important;
+        padding: 0;
+        background-color: #f7f7f7;
+    }
+    
+    img {
+        border: 0;
+    }
+    
+    p {
+        Margin: 0;
+        -webkit-text-size-adjust: none;
+        color: #696c74;
+    }
+    
+    table {
+        border-spacing: 0;
+        font-family: 'Lato',Arial, sans-serif;
+        color: #333333;
+    }
+    
+    td {
+        padding: 0;
+    }
+    
+     /* SECTION STYLES */
+    .contents {
+        width: 100%;
+        background-color: #ffffff;
+    }
+    
+    .header {
+        background-color: #f7f7f7;
+        width: 100%;
+    }
+    
+    .footer {
+        width: 100%;
+        background-color: #F7F7F7;
+    }
+    
+    .inner {
+        padding: 10px;
+    }
+    
+    .outer {
+        Margin: 0 auto !important;
+        width: 100%;
+        max-width: 600px;
+        background-color: #ffffff;
+    }
+    
+    .webkit {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .wrapper {
+        width: 100%;
+        table-layout: fixed;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        background-color: #f7f7f7;
+    }
+    
+     /* IMAGE STYLES */
+    .full-width-image img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+
+    
+    /* ADJUST MAX-WIDTH OF SECONDARY IMAGE TO WIDTH OF ASSET PROVIDED BY DESIGN */
+    .secondary__image img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        text-align: center;
+    }
+    
+     /* ADJUST IMAGE ALIGNMENT HERE IF IT DOESN'T TAKE UP THE FULL 600PX */
+    .secondary__image {
+        text-align: center;
+    }
+    
+    
+    .divider__block {
+        padding: 10px;
+        color: #f7f7f7;
+        border-style: 1px solid #b2b2b2;
+    }
+    
+    .h2__gray {
+        font-size: 16px;
+        font-weight: bold;
+        Margin-bottom: 12px;
+        color: #676c74;
+        text-align: center;
+        -webkit-text-size-adjust: none;
+    }
+    
+    .h2__orange {
+        font-size: 16px;
+        font-weight: bold;
+        Margin-bottom: 12px;
+        color: #fe8a02;
+        text-align: center;
+        -webkit-text-size-adjust: none;
+    }
+
+    .pink__text {
+        color: #b52b72 ;
+    }
+    
+    .subtext {
+        padding-top: 0px !important;
+    }
+    
+      /* ONE COLUMN LAYOUT */
+    .one-column .contents {
+        text-align: center;
+        padding: 0 50px;
+    }
+    
+    .one-column .h2__gray {
+        font-size: 16px;
+        font-weight: bold;
+        Margin-bottom: 0px;
+        color: #676c74;
+        text-align: center;
+        -webkit-text-size-adjust: none;
+    }
+    
+    .one-column .header__text {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        color: #fe8a02;
+        padding: 20px 30px 0px 30px;
+    }
+    
+    .one-column p {
+        font-size: 14px;
+        Margin-bottom: 12px;
+        line-height: 18px;
+    }
+    
+    .one-column .subtext {
+        padding-top: 0px !important;
+        color: #696c74;
+        text-align: center;
+        -webkit-text-size-adjust: none;
+        font-size: 14px;
+    }
+    
+     /* TWO COLUMN LAYOUT */
+    
+    .two-column {
+        text-align: center;
+        font-size: 0;
+        padding: 0 50px;
+    }
+    
+    .two-column .column {
+        width: 100%;
+        max-width: 230px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    .two-column .contents {
+        font-size: 14px;
+        text-align: left;
+        -webkit-text-size-adjust: none;
+        color: #696c74;
+    }
+    
+    .two-column img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        padding: 0 0 10px 0;
+    }
+    
+    .two-column .text {
+        padding-top: 0px;
+        -webkit-text-size-adjust: none;
+    }
+    
+     /* Footer One column layout*/
+    
+    .footer-one-column {
+        width: 100%;
+        background-color: #F7F7F7;
+        align: center;
+        padding: 20px 0;
+    }
+    
+    td.footer-social {
+        padding: 15px 0 0 0;
+    }
+    
+    .footer-social img {
+        padding: 0 10px 0 0;
+    }
+    
+     /* LEFT SIDEBAR LAYOUT */
+    .left-sidebar {
+        text-align: center;
+        font-size: 0;
+    }
+    
+    .left-sidebar a {
+        color: #85ab70;
+    }
+    
+    .left-sidebar .img {
+        width: 100%;
+        max-width: 80px;
+        height: auto;
+    }
+    
+    .left-sidebar .column {
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    .left-sidebar .contents {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .left-sidebar .left {
+        max-width: 100px;
+    }
+    
+    .left-sidebar .right {
+        max-width: 500px;
+    }
+    
+        /*Media Queries*/
+    @media screen and (min-device-width: 481px) and (max-device-width: 620px) {
+        .three-column .column {
+            max-width: 33% !important;
+        }
+        .two-column .column {
+            max-width: 50% !important;
+        }
+    }
+    
+    @media only screen and (max-device-width: 480px) {
+        
+          .button{
+            width:255px !important;
+            height:67px !important;
+            border-radius:45px !important;
+            text-align:center !important;
+        }
+
+        .button a{
+            font-size:18px !important;
+            display:inline-block !important;
+            padding:10px 0 10px 0 !important;
+        }
+
+    
+
+        .contents {
+            font-size: 16px !important;
+        }
+
+        .h2__gray {
+            font-size: 18px !important;
+        }
+        .h2__orange {
+            font-size: 18px !important;
+        }
+        img[id=mobileHide] {
+            display: none !important;
+        }
+
+        
+
+         .one-column p.header__text {
+            line-height: 40px !important;
+             font-size:28px !important;
+        }
+        
+      .one-column p.text {
+            font-size:24px !important;
+            line-height:33px !important;
+            padding: 15px 0 5px 0 !important;
+        }
+        
+         .one-column h2{
+            padding:20px 20px 0px 20px !important;
+            font-size:26px !important;
+            line-height:35px !important;
+        }
+        
+        .secondary__image img {
+            width: 300px !important;
+        }
+
+        
+
+        span[id=mobileShow]{
+            display:block;
+            background-image:url(https://gallery.mailchimp.com/0353946c8bec928552e84fe10/images/fd034a19-e657-4218-be1c-31073a967e0a.jpeg) !important;
+            background-repeat:no-repeat !important;
+            background-position:center !important;
+            width:480px !important;
+            height:351px !important;
+            background-size:cover !important;
+        }
+        .two-column .column,
+        .three-column .column {
+            max-width: 100% !important;
+        }
+        .two-column img {
+            max-width: 48px !important;
+        }
+        
+           .two-column p.text {
+            font-size:20px !important;
+            line-height:30px !important;
+            text-align:center !important;
+            padding:0px !important;
+            width:100% !important;
+        }
+        
+          
+           .two-column p.h2__gray {
+            font-size:26px !important;
+            line-height:33px !important;
+            text-align:center !important;
+            padding:0px !important;
+            width:100% !important;
+        }
+        
+              .left-sidebar p.text {
+            font-size:20px !important;
+            line-height:30px !important;
+            text-align:left !important;
+            padding:0px !important;
+            width:100% !important;
+        }
+        
+          
+           .left-sidebar p.h2__gray {
+            font-size:26px !important;
+            line-height:33px !important;
+            text-align:left !important;
+            padding:0px !important;
+            width:100% !important;
+        }
+        .three-column img {
+            width: 75%;
+        }
+    }
+    </style>
+</head>
+
+<body style="margin-top:0 !important;margin-bottom:0 !important;margin-right:0 auto !important;margin-left:0 auto !important;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;background-color:#f7f7f7;" >
+    <!-- START PREHEADER TEXT -->
+    <div style="display:none;font-size:0px;line-height:0px;max-height:0px;max-width:0px;width:0px;opacity:0;overflow:hidden;" >
+        This is some preheader text.
+    </div>
+    <!-- END PREHEADER TEXT -->
+    <center class="wrapper" style="width:100%;table-layout:fixed;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background-color:#f7f7f7;margin-top:0 !important;margin-bottom:0 !important;margin-right:auto !important;margin-left:auto !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;">
+         <div class="webkit" style="max-width:600px;margin-top:0;margin-bottom:0;margin-right:auto;margin-left:auto;">
+            <!--[if (gte mso 9)|(IE)]>
+            <table width="600" align="center" style="border-spacing:0;font-family:'Lato',Arial, sans-serif;color:#333333;" >
+            <tr>
+            <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+            <![endif]-->
+            <table class="outer" align="center" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;Margin:0 auto !important;width:100%;max-width:600px;background-color:#ffffff;" >
+                <!-- START HEADER -->
+                <tr>
+                    <td class="header" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;background-color:#f7f7f7;width:100%;" >
+                        <table width="100%" style="border-spacing:0;font-family:'Lato',Arial, sans-serif;color:#333333;" >
+                            <tr>
+                                <td class="header inner" style="background-color:#f7f7f7;width:100%;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                                    <img src="http://img.en25.com/EloquaImages/clients/MINDBODYInc/%7b37c5397d-dd58-4776-9506-c43b6a81ea7d%7d_MINDBODY-Logo-Horizontal.png"  width="200" style="width:200px;border-width:0;" />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- END HEADER -->
+                <!-- START MOBILE SWAP HERO IMAGE -->
+                <tr>
+                    <td class="hero-image" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                    <a href="#" style="color:#2479bb;text-decoration:underline;" >
+                        <span id="mobileShow">
+                             <img id="mobileHide" src="https://gallery.mailchimp.com/0353946c8bec928552e84fe10/images/f46d5548-c65f-4e8f-88d5-7c84292f7c2b.jpg" width="600" alt="DON'T FORGET TO ADD ALT TEXT" style="border-width:0;width:100%;max-width:600px;height:auto;" />
+                        </span></a>
+                    </td>
+                </tr>
+                <!-- END MOBILE SWAP HERO IMAGE -->
+               
+        
+               <!-- START BLOG #1 -->
+                <!-- START LEFT SIDEBAR TWO COLUMN -->
+                <tr>
+                    <td class="left-sidebar" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:center;font-size:0;" >
+                        <!--[if (gte mso 9)|(IE)]>
+        <table width="100%" style="border-spacing:0;font-family:'Lato',Arial, sans-serif;color:#333333;" >
+        <tr>
+        <td width="300" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+        <![endif]-->
+                        <div class="column left" style="width:100%;display:inline-block;vertical-align:middle;max-width:300px;" >
+                            <table width="100%" style="border-spacing:0;font-family:'Lato',Arial, sans-serif;color:#333333;" >
+                                <tr>
+                                    <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                                         <a href="https://www.mindbodyonline.com/blog/inspiration/movers-and-shakers/balancing-motherhood-and-business-meet-two-inspiring-moms"><img src="https://gallery.mailchimp.com/0353946c8bec928552e84fe10/images/f46a401b-5341-456b-a949-bfe4dd570c4f.jpg" width="260" height="150" style="margin:0; padding:0; border:none; display:block; color:; font-size:" border="0" class="image" alt="Balancing Motherhood and Business"> </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+        </td>
+
+        <td width="280" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+        <![endif]-->
+                        <div class="column right" style="width:100%;display:inline-block;vertical-align:middle;max-width:280px;" >
+                            <table width="100%" style="border-spacing:0;font-family:'Lato',Arial, sans-serif;color:#333333;" >
+                            <tr>
+                                    <td class="inner contents" style="width:100%;background-color:#ffffff;padding-top:10px;padding-bottom:5px;padding-right:10px;padding-left:0px;font-size:14px;text-align:left; color:#696c74;" >
+                                        <p class="h2__gray" style="font-size:16px;color:#696c74;text-align:left;Margin:0;font-weight:bold;Margin-bottom:12px;-webkit-text-size-adjust:none;" >This is a Title</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="inner contents" style="width:100%;background-color:#ffffff;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:0px;font-size:14px;text-align:left; color:#696c74;" >
+                                       <p class="text">Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                                <td height="20" style="font-size:20px;line-height:20px;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >&nbsp;</td>
+                                            </tr>
+                                 <!-- START CENTERED BUTTON -->
+    <tr>
+      <td>
+        
+        <table border="0" align="left" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+          <tbody>
+          <tr>
+            <td align="left">
+                  <!--[if mso]>
+                                            <a href="UPDATE LINK HERE" style="color:#2479bb;text-decoration:underline;" >
+ <img src="http://img.en25.com/EloquaImages/clients/MINDBODYInc/%7Bede129da-31b3-46fd-ad7c-0783cad7bf5f%7D_2016-Sept-MB-Network-CTA.png" width="120"  alt="Find out how" style="border-width:0;max-width:170px;height:auto;" /></a>
+   
+<![endif]-->
+                
+              <table border="0" cellpadding="0" cellspacing="0" style="margin:0 auto; mso-hide:all;">
+                  
+                <tr>
+                    
+                  <td class="button" align="left" bgcolor="#F68F1E" width="120" style="-moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px; mso-hide:all;">
+                    <a href="UPDATE LINK HERE" style="padding: 10px;width:120px; display: block;text-decoration: none;border:0;text-align: center;font-weight: 400;font-size: 12px;font-family: 'Lato', Arial, sans-serif;color: #ffffff;background: #f68f1e;-moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px; line-height: 25px; mso-hide:all;">
+                    THIS IS A BUTTON
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        
+      </td>
+    </tr>
+ 
+<!-- END CENTERED BUTTON -->
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+                    </td>
+                </tr>
+                <!-- END LEFT SIDEBAR TWO COLUMN -->
+
+                <!-- END BLOG #1 -->
+                <tr>
+                    <td height="20" style="font-size:20px;line-height:20px;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >&nbsp;</td>
+                </tr>
+
+                <!-- START BLOG #2 -->
+                 <!-- START LEFT SIDEBAR TWO COLUMN -->
+                <tr>
+                    <td class="left-sidebar" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:center;font-size:0;" >
+                        <!--[if (gte mso 9)|(IE)]>
+        <table width="100%" style="border-spacing:0;font-family:'Lato',Arial, sans-serif;color:#333333;" >
+        <tr>
+        <td width="300" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+        <![endif]-->
+                        <div class="column left" style="width:100%;display:inline-block;vertical-align:middle;max-width:300px;" >
+                            <table width="100%" style="border-spacing:0;font-family:'Lato',Arial, sans-serif;color:#333333;" >
+                                <tr>
+                                    <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                                         <a href="https://www.mindbodyonline.com/blog/inspiration/movers-and-shakers/balancing-motherhood-and-business-meet-two-inspiring-moms"><img src="https://gallery.mailchimp.com/0353946c8bec928552e84fe10/images/f46a401b-5341-456b-a949-bfe4dd570c4f.jpg" width="260" height="150" style="margin:0; padding:0; border:none; display:block; color:; font-size:" border="0" class="image" alt="Balancing Motherhood and Business"> </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+        </td>
+
+        <td width="280" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+        <![endif]-->
+                        <div class="column right" style="width:100%;display:inline-block;vertical-align:middle;max-width:280px;" >
+                            <table width="100%" style="border-spacing:0;font-family:'Lato',Arial, sans-serif;color:#333333;" >
+                            <tr>
+                                    <td class="inner contents" style="width:100%;background-color:#ffffff;padding-top:10px;padding-bottom:5px;padding-right:10px;padding-left:0px;font-size:14px;text-align:left; color:#696c74;" >
+                                        <p class="h2__gray" style="font-size:16px;color:#696c74;text-align:left;Margin:0;font-weight:bold;Margin-bottom:12px;-webkit-text-size-adjust:none;" >This is a Title</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="inner contents" style="width:100%;background-color:#ffffff;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:0px;font-size:14px;text-align:left; color:#696c74;" >
+                                      <p class="text">Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                                <td height="20" style="font-size:20px;line-height:20px;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >&nbsp;</td>
+                                            </tr>
+                                 <!-- START CENTERED BUTTON -->
+    <tr>
+      <td>
+        
+        <table border="0" align="left" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+          <tbody>
+          <tr>
+            <td align="left">
+                  <!--[if mso]>
+                                            <a href="UPDATE LINK HERE" style="color:#2479bb;text-decoration:underline;" >
+ <img src="http://img.en25.com/EloquaImages/clients/MINDBODYInc/%7Bede129da-31b3-46fd-ad7c-0783cad7bf5f%7D_2016-Sept-MB-Network-CTA.png" width="120"  alt="Find out how" style="border-width:0;max-width:170px;height:auto;" /></a>
+   
+<![endif]-->
+                
+              <table border="0" cellpadding="0" cellspacing="0" style="margin:0 auto; mso-hide:all;">
+                  
+                <tr>
+                    
+                  <td class="button" align="left" bgcolor="#F68F1E" width="120" style="-moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px; mso-hide:all;">
+                    <a href="UPDATE LINK HERE" style="padding: 10px;width:120px; display: block;text-decoration: none;border:0;text-align: center;font-weight: 400;font-size: 12px;font-family: 'Lato', Arial, sans-serif;color: #ffffff;background: #f68f1e;-moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px; line-height: 25px; mso-hide:all;">
+                    THIS IS A BUTTON
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        
+      </td>
+    </tr>
+ 
+<!-- END CENTERED BUTTON -->
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+                    </td>
+                </tr>
+                <!-- END LEFT SIDEBAR TWO COLUMN -->
+                <!-- END BLOG #2 -->
+                <tr>
+                    <td height="20" style="font-size:20px;line-height:20px;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >&nbsp;</td>
+                </tr>
+
+                <!-- START BLOG #3 -->
+
+                 <!-- START LEFT SIDEBAR TWO COLUMN -->
+                <tr>
+                    <td class="left-sidebar" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:center;font-size:0;" >
+                        <!--[if (gte mso 9)|(IE)]>
+        <table width="100%" style="border-spacing:0;font-family:'Lato',Arial, sans-serif;color:#333333;" >
+        <tr>
+        <td width="300" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+        <![endif]-->
+                        <div class="column left" style="width:100%;display:inline-block;vertical-align:middle;max-width:300px;" >
+                            <table width="100%" style="border-spacing:0;font-family:'Lato',Arial, sans-serif;color:#333333;" >
+                                <tr>
+                                    <td class="inner" style="padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:10px;" >
+                                         <a href="https://www.mindbodyonline.com/blog/inspiration/movers-and-shakers/balancing-motherhood-and-business-meet-two-inspiring-moms"><img src="https://gallery.mailchimp.com/0353946c8bec928552e84fe10/images/f46a401b-5341-456b-a949-bfe4dd570c4f.jpg" width="260" height="150" style="margin:0; padding:0; border:none; display:block; color:; font-size:" border="0" class="image" alt="Balancing Motherhood and Business"> </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+        </td>
+
+        <td width="280" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+        <![endif]-->
+                        <div class="column right" style="width:100%;display:inline-block;vertical-align:middle;max-width:280px;" >
+                            <table width="100%" style="border-spacing:0;font-family:'Lato',Arial, sans-serif;color:#333333; padding: 10px 0 0 0;" >
+                            <tr>
+                                    <td class="inner contents" style="width:100%;background-color:#ffffff;padding-top:20px;padding-bottom:5px;padding-right:10px;padding-left:0px;font-size:14px;text-align:left; color:#696c74;" >
+                                        <p class="h2__gray" style="font-size:16px;color:#696c74;text-align:left;Margin:0;font-weight:bold;Margin-bottom:12px;-webkit-text-size-adjust:none;" >This is a Title</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="inner contents" style="width:100%;background-color:#ffffff;padding-top:10px;padding-bottom:10px;padding-right:10px;padding-left:0px;font-size:14px;text-align:left; color:#696c74;" >
+                                      <p class="text">Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                                <td height="20" style="font-size:20px;line-height:20px;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >&nbsp;</td>
+                                            </tr>
+                                 <!-- START CENTERED BUTTON -->
+    <tr>
+      <td>
+        
+        <table border="0" align="left" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+          <tbody>
+          <tr>
+            <td align="left">
+                  <!--[if mso]>
+                                            <a href="UPDATE LINK HERE" style="color:#2479bb;text-decoration:underline;" >
+ <img src="http://img.en25.com/EloquaImages/clients/MINDBODYInc/%7Bede129da-31b3-46fd-ad7c-0783cad7bf5f%7D_2016-Sept-MB-Network-CTA.png" width="120"  alt="Find out how" style="border-width:0;max-width:170px;height:auto;" /></a>
+   
+<![endif]-->
+                
+              <table border="0" cellpadding="0" cellspacing="0" style="margin:0 auto; mso-hide:all;">
+                  
+                <tr>
+                    
+                  <td class="button" align="left" bgcolor="#F68F1E" width="120" style="-moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px; mso-hide:all;">
+                    <a href="UPDATE LINK HERE" style="padding: 10px;width:120px; display: block;text-decoration: none;border:0;text-align: center;font-weight: 400;font-size: 12px;font-family: 'Lato', Arial, sans-serif;color: #ffffff;background: #f68f1e;-moz-border-radius: 25px; -webkit-border-radius: 25px; border-radius: 25px; line-height: 25px; mso-hide:all;">
+                    THIS IS A BUTTON
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        
+      </td>
+    </tr>
+ 
+<!-- END CENTERED BUTTON -->
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+                    </td>
+                </tr>
+                <!-- END LEFT SIDEBAR TWO COLUMN -->
+
+                <!-- END BLOG #3 -->
+                <tr>
+                    <td height="20" style="font-size:20px;line-height:20px;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >&nbsp;</td>
+                </tr>
+                <!--START FOOTER-->
+                <tr>
+                    <td class="footer-one-column" bgcolor="#F7F7F7" style="width:100%;background-color:#F7F7F7;align:center;padding-top:20px;padding-bottom:20px;padding-right:0;padding-left:0;" >
+                        <table width="100%" align="center" style="border-spacing:0;font-family:'Lato',Arial, sans-serif;color:#333333;" >
+                            <tr>
+                                <td align="center" class="footer-inner" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                                    <img src="http://img.en25.com/EloquaImages/clients/MINDBODYInc/%7b21697724-b896-4865-96a7-f6258a059aca%7d_MB_Logo.png"  width="170" style="width:170px;border-width:0;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="footer-social" align="center" valign="middle" width="100%" style="font-size:11px;color:#f1f1f1;font-weight:normal;font-family:Georgia, Times, serif;line-height:22px;vertical-align:middle;text-align:center;padding-top:15px;padding-bottom:0;padding-right:0;padding-left:0;" >
+                                    <a href="https://www.facebook.com/mindbodyonline" style="color:#2479bb;text-decoration:underline;" ><img src="http://img.en25.com/EloquaImages/clients/MINDBODYInc/%7b3acbd123-517a-490c-9194-93f50216d58d%7d_Facebook.png" width="26" height="26"  alt="Facebook" title="Facebook" border="0" style="max-width:26px;border-width:0;padding-top:0;padding-bottom:0;padding-right:10px;padding-left:0;" /></a>
+                                    <a href="https://twitter.com/mindbodyonline" style="color:#2479bb;text-decoration:underline;" ><img src="http://img.en25.com/EloquaImages/clients/MINDBODYInc/%7b01fb5f67-f398-4cbb-bfb1-30ef301f3f20%7d_Twitter.png" width="26" height="26" alt="Twitter" title="Twitter" border="0" style="max-width:26px;border-width:0;padding-top:0;padding-bottom:0;padding-right:10px;padding-left:0;" /></a>
+                                    <a href="https://www.instagram.com/mindbodyonline/" style="color:#2479bb;text-decoration:underline;" ><img src="http://img.en25.com/EloquaImages/clients/MINDBODYInc/%7ba08080d4-c7a3-4c16-9795-2d5e62b9efdb%7d_Instagram.png" width="26" height="26" alt="Instagram" title="Instagram" border="0" style="max-width:26px;border-width:0;padding-top:0;padding-bottom:0;padding-right:10px;padding-left:0;" /></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!--END FOOTER-->
+            </table>
+        </div>
+    </center>
+</body>
+
+</html>

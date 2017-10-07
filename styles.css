@@ -58,10 +58,10 @@ header {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #d7d7d7;
+    /*background-color: #d7d7d7;*/
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
-    width: 298px;
+    width: 320px;
     float: right;
     margin-right: 4px;
 }
@@ -92,8 +92,28 @@ header {
     float: right;
     margin-right: 6%;
 }
+.home-nav-ul:after {
+    background: url(https://s-media-cache-ak0.pinimg.com/236x/bd/86/6b/bd866bf3689609e1dd85bb10e043c290.jpg) repeat center center fixed;
+    height: 150px;
+    max-height: 150px;
+    width: 100%;
+    content: "";
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
 .home-nav-li {
     float: right;
+    background-color: #d7d7d7;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    width:100px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
 }
 .home-nav-li a {
     display: block;
