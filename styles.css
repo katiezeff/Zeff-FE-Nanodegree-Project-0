@@ -62,7 +62,7 @@ header {
     /*background-color: #d7d7d7;*/
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
-    width: 330px;
+    width: 360px;
     float: right;
     margin-right: 4px;
 }
@@ -112,7 +112,7 @@ header {
     background-color: #d7d7d7;
     border-top-right-radius: 16px;
     border-top-left-radius: 16px;
-    width:110px;
+    width:120px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
 }
