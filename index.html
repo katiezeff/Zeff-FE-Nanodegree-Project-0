@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <script>document.body.className += ' fade-out';</script>
         <main>
             <header>
                 <div class="content header-content">
@@ -76,5 +77,8 @@
             </footer>
 
         </main>
+       <script> $(function() {
+    $('body').removeClass('fade-out');
+});</script>
     </body>
 </html>
