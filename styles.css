@@ -69,6 +69,7 @@ header {
 .project-list {
     list-style-type: none;
     min-height: 500px;
+    padding:0px;
 }
 .project-list-li {
     margin-top: 10px;
@@ -319,7 +320,7 @@ h1 {
 /* project item hover */
 
 .view {
-    margin: 6px;
+    margin: 10px;
     float: left;
     border: 8px solid #fff;
     overflow: hidden;
